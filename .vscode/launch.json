@@ -1,0 +1,60 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Eureka Server",
+            "request": "launch",
+            "mainClass": "com.example.eurekaserver.EurekaServerApplication",
+            "projectName": "eureka-server",
+            "args": "",
+            "vmArgs": "-Dspring.profiles.active=dev",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "User Service",
+            "request": "launch",
+            "mainClass": "com.example.userservice.UserServiceApplication",
+            "projectName": "user-service",
+            "args": "",
+            "vmArgs": "-Dspring.profiles.active=dev",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Eureka Server (JAR)",
+            "request": "launch",
+            "mainClass": "",
+            "projectName": "",
+            "args": "",
+            "vmArgs": "",
+            "console": "integratedTerminal",
+            "preLaunchTask": "build-eureka-server",
+            "cwd": "${workspaceFolder}/eureka-server",
+            "command": "java",
+            "args": [
+                "-jar",
+                "target/eureka-server-1.0.0.jar"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "User Service (JAR)",
+            "request": "launch",
+            "mainClass": "",
+            "projectName": "",
+            "args": "",
+            "vmArgs": "",
+            "console": "integratedTerminal",
+            "preLaunchTask": "build-user-service",
+            "cwd": "${workspaceFolder}/user-service",
+            "command": "java",
+            "args": [
+                "-jar",
+                "target/user-service-1.0.0.jar"
+            ]
+        }
+    ]
+}

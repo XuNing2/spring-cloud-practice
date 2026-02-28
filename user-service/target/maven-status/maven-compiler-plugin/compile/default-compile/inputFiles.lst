@@ -1,0 +1,5 @@
+/workspaces/WebProjects/spring-cloud-practice/user-service/src/main/java/com/example/userservice/UserServiceApplication.java
+/workspaces/WebProjects/spring-cloud-practice/user-service/src/main/java/com/example/userservice/repository/UserRepository.java
+/workspaces/WebProjects/spring-cloud-practice/user-service/src/main/java/com/example/userservice/service/UserService.java
+/workspaces/WebProjects/spring-cloud-practice/user-service/src/main/java/com/example/userservice/controller/UserController.java
+/workspaces/WebProjects/spring-cloud-practice/user-service/src/main/java/com/example/userservice/entity/User.java
