@@ -1,7 +1,19 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "ApiGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.example.apigateway.ApiGatewayApplication",
+            "projectName": "api-gateway"
+        },
+        {
+            "type": "java",
+            "name": "ApiGatewayApplication",
+            "request": "launch",
+            "mainClass": "main.java.com.example.apigateway.ApiGatewayApplication"
+        },
         {
             "type": "java",
             "name": "Eureka Server",
@@ -28,16 +40,15 @@
             "request": "launch",
             "mainClass": "",
             "projectName": "",
-            "args": "",
+            "args": [
+                "-jar",
+                "target/eureka-server-1.0.0.jar"
+            ],
             "vmArgs": "",
             "console": "integratedTerminal",
             "preLaunchTask": "build-eureka-server",
             "cwd": "${workspaceFolder}/eureka-server",
-            "command": "java",
-            "args": [
-                "-jar",
-                "target/eureka-server-1.0.0.jar"
-            ]
+            "command": "java"
         },
         {
             "type": "java",
@@ -45,16 +56,15 @@
             "request": "launch",
             "mainClass": "",
             "projectName": "",
-            "args": "",
+            "args": [
+                "-jar",
+                "target/user-service-1.0.0.jar"
+            ],
             "vmArgs": "",
             "console": "integratedTerminal",
             "preLaunchTask": "build-user-service",
             "cwd": "${workspaceFolder}/user-service",
-            "command": "java",
-            "args": [
-                "-jar",
-                "target/user-service-1.0.0.jar"
-            ]
+            "command": "java"
         }
     ]
 }

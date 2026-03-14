@@ -14,7 +14,7 @@ import java.util.Optional;
  * 用户控制器
  */
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("users")
 public class UserController {
     
     @Autowired

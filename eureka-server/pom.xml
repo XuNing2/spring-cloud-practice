@@ -19,7 +19,7 @@
     <description>Eureka Server - 服务注册中心</description>
 
     <properties>
-        <java.version>8</java.version>
+        <java.version>21</java.version>
         <spring-cloud.version>2021.0.8</spring-cloud.version>
     </properties>
 
