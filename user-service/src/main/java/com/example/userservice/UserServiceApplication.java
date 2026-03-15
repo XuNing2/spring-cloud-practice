@@ -2,15 +2,7 @@ package com.example.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-
-/**
- * 用户服务启动类
- * 
- * @EnableEurekaClient 注解启用 Eureka 客户端功能
- */
 @SpringBootApplication
-@EnableEurekaClient
 public class UserServiceApplication {
 
     public static void main(String[] args) {
